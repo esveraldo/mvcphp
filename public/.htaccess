@@ -1,0 +1,8 @@
+RewriteEngine on
+
+Options -Indexes
+
+RewriteCond %{REQUEST_FILE} !f
+RewriteCond %{REQUEST_FILE} !d
+
+RewriteRule ^(.*)$ index.php [NC,L,QSA]
